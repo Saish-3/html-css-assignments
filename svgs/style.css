@@ -1,0 +1,52 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+svg {
+    margin-top: 50px;
+    border: 1px solid #444;
+    background: #222;
+}
+
+/* Circle Bounce */
+.circle {
+    fill: #00adb5;
+    animation: bounce 1.5s infinite alternate;
+}
+
+@keyframes bounce {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-80px); }
+}
+
+/* Rotating Square */
+.square {
+    fill: #ff5722;
+    transform-origin: 200px 150px;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Moving Line */
+.line {
+    stroke: #f4a261;
+    stroke-width: 5;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: draw 2s linear infinite;
+}
+
+@keyframes draw {
+    to { stroke-dashoffset: 0; }
+}
